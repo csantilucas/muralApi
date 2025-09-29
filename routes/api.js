@@ -2,6 +2,13 @@ const express = require('express');
 const router = express.Router()
 const bodyParser = require('body-parser');
 const post = require('../model/post')
+const cors = require ('cors')
+
+const option = {
+    origin: 'http://localhost:3000'
+
+}
+router.use(cors(option));
 
 router.get('/all', (req, res) => {
 
