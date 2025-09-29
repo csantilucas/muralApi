@@ -5,7 +5,7 @@ const post = require('../model/post')
 const cors = require ('cors')
 
 const option = {
-    origin: 'http:// :3000'
+    origin: 'http://localhost:3000'
 
 }
 router.use(cors(option));
